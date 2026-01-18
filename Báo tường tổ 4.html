@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Tường 12A5 - Ngày Khai Trường</title>
+    <style>
+        :root {
+            --primary-color: #c0392b;
+            --accent-color: #f39c12;
+            --bg-color: #fdfcf0;
+            --text-color: #2c3e50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('kg2.jpg') no-repeat center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 5px solid var(--primary-color);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .content-box {
+            width: 100%;
+            border: none;
+            min-height: 200px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .photo-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        .video-container {
+            text-align: center;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .container { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>NGÀY KHAI TRƯỜNG</h1>
+    <p>Báo tường điện tử tập thể lớp 12A5</p>
+</header>
+
+<div class="container">
+    
+    <section id="loi-ngo">
+        <h2>Lời Ngỏ</h2>
+        <iframe src="Lời ngỏ.html" class="content-box" style="height: 180px;"></iframe>
+    </section>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <section>
+            <h2>Góc Thơ</h2>
+            <iframe src="Góc thơ.html" class="content-box" style="height: 300px;"></iframe>
+        </section>
+
+        <section>
+            <h2>Góc Đố Vui</h2>
+            <iframe src="Góc đố vui.html" class="content-box" style="height: 300px;"></iframe>
+        </section>
+    </div>
+
+    <section id="gallery">
+        <h2>Góc Ảnh Kỷ Niệm</h2>
+        <div class="photo-grid">
+            <img src="kg2.jpg" alt="Ảnh khai giảng 2">
+            <img src="kg3.jpg" alt="Ảnh khai giảng 3">
+            <img src="kg4.jpg" alt="Ảnh khai giảng 4">
+            <img src="kg5.jpg" alt="Ảnh khai giảng 5">
+        </div>
+    </section>
+
+    <section id="video">
+        <h2>Khoảnh Khắc Video</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="kg1.mp4" type="video/mp4">
+                Trình duyệt của bạn không hỗ trợ xem video.
+            </video>
+        </div>
+    </section>
+
+    <section>
+        <iframe src="email.html" class="content-box" style="height: 150px;"></iframe>
+    </section>
+
+</div>
+
+<footer>
+    <iframe src="giới thiệu.html" style="width: 100%; height: 50px; border: none; filter: invert(1);"></iframe>
+    <p>&copy; 2024 - Tập thể lớp 12A5 - Trường THPT của bạn</p>
+</footer>
+
+</body>
+</html>
